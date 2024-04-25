@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ChumamiApplication<chumami>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.chupapi.chumami.ChumamiApplication",
+            "projectName": "chumami",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
