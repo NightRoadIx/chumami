@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Web</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+        th, td {
+            border-top: 1px solid #007bff; /* Líneas horizontales azules */
+            padding: 15px;
+        }
+        td {
+            text-align: center;
+        }
+        img {
+            max-width: 200px;
+            max-height: 200px;
+            width: auto;
+            height: auto;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        .theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .theme-toggle:hover {
+            background-color: #0056b3;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .dark-mode a {
+            color: #e0e0e0;
+        }
+        .dark-mode table th, .dark-mode table td {
+            border-top: 1px solid #444;
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">Modo Oscuro</button>
+    <h1>PORTAL WEB</h1>
+    <div class="container">
+        <table class="table table-borderless">
+            <tr>
+                <td>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                        <p>Facebook</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                        <p>Instagram</p>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://www.onlyfans.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/OnlyFans_logo.svg/640px-OnlyFans_logo.svg.png" alt="OnlyFans">
+                        <p>OnlyFans</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.saes.upiih.ipn.mx/" target="_blank">
+                        <img src="https://www.upiem.ipn.mx/assets/files/upiem/uploads/saes.jpg" alt="SAES UPIIH">
+                        <p>SAES UPIIH</p>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/250px-X_logo_2023.svg.png" alt="Twitter">
+                        <p>Twitter</p>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+            const themeToggleBtn = document.querySelector(".theme-toggle");
+            if (body.classList.contains("dark-mode")) {
+                themeToggleBtn.textContent = "Modo Claro";
+            } else {
+                themeToggleBtn.textContent = "Modo Oscuro";
+            }
+        }
+    </script>
+</body>
+</html>

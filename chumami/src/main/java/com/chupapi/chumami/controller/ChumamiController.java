@@ -12,7 +12,7 @@ public class ChumamiController {
     @GetMapping("/")
     public String showLoginPage(){
         System.out.println("Trata de b...");
-        return "index";
+        return "portal";
     }
 
     @GetMapping("/chumami")
